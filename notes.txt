@@ -1,0 +1,13 @@
+->> Summary of Key Differences b/w npm and npx:
+1. npm installs and manages packages, while npx is used to run packages directly.
+2. With npx, you don’t need to install the package globally, making it useful for one-time package executions.
+3. npm is better suited for managing dependencies within a project, while npx is ideal for one-off usage of tools or utilities without cluttering your environment.
+
+->> Routinhg:
+    BrowserRouter (as Router): This component enables client-side routing. It keeps the UI in sync with the URL in the browser. Without BrowserRouter, React apps would
+rely on full-page reloads to navigate between different routes or URLs.
+It listens to changes in the browser's address bar and renders the appropriate components based on the URL path.
+    Switch: The Switch component ensures that only one route is rendered at a time. It renders the first Route that matches the URL and ignores the rest. Without Switch,
+multiple Route components could match and render simultaneously if their paths overlap.
+
+->> "Routes" allows seamless nested routing which might be problematic for "Switch"
