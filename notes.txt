@@ -11,3 +11,13 @@ It listens to changes in the browser's address bar and renders the appropriate c
 multiple Route components could match and render simultaneously if their paths overlap.
 
 ->> "Routes" allows seamless nested routing which might be problematic for "Switch"
+
+->> useCallback Hook
+useCallback is a React hook that memoizes a function so that it is only recreated when one of its dependencies changes.
+In this case, the function fetchBooks will be recreated only when searchTerm changes.
+The purpose is to optimize performance by avoiding unnecessary re-creations of the function on every render.
+
+->> Asynchronous Function fetchBooks
+fetchBooks is an asynchronous function, meaning it uses the async keyword, allowing it to wait for asynchronous operations like fetching data from an API.
+It is used here to fetch book data based on a search term.
+
